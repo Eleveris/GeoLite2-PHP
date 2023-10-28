@@ -1,0 +1,25 @@
+{
+  "name": "eleveris/geolite2-php",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roman Davydov",
+      "email": "321qazz@gmail.com"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "v5.5",
+    "slim/slim": "v4.12",
+    "slim/psr7": "v1.6.1",
+    "ext-memcached": "*",
+    "guzzlehttp/guzzle": "^7.0",
+    "geoip2/geoip2": "2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "geolite2php\\": ""
+    }
+  }
+}
