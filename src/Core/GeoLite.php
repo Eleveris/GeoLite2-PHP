@@ -33,6 +33,6 @@ class GeoLite
     public function getCountry(string $ip): string
     {
         $response = $this->client->request('GET', "country/$ip");
-        return json_decode($response->getBody()->getContents(), true)['country']['iso_code'];
+        return json_decode($response->getBody()->getContents(), true)['country']['iso_code'] ?? "";
     }
 }
